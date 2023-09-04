@@ -1,0 +1,546 @@
+johngo_tec
+几百本编程经典书，打包下载地址
+
+链接: https://pan.baidu.com/s/1hL5G14eiRp6WdK7iWlsuzw 
+提取码: j7i8
+
+目录：
+CPP
+C语言
+Go
+Java
+Linux
+Python
+git
+前端
+数据库
+软技能
+操作系统
+数学相关
+汇编语言
+笔试面试
+设计模式
+计算机系统
+计算机网络
+数据结构与算法
+
+books/CPP:
+C++ Primer Plus.pdf
+C++ Primer-第4版.pdf
+C++ Primer（第5版）_带书签_高清完整版.pdf
+C++ Primer习题集  第5版 ,（美）李普曼 ,P520.pdf
+C++Primer 5th 英文版.pdf
+C++编程规范-101条规则准则与最佳实践.pdf
+C++对象模型.pdf
+C++设计新思维-泛型编程与设计之应用.pdf
+C++标准程序库.pdf
+C++并发编程实战.pdf
+C++程序设计语言.pdf
+C++编程调试秘笈.pdf
+C++沉思录中文第2版.pdf
+C++编程思想（两卷合订本）.pdf
+CppPractice.pdf
+Effective C++  中文版第三版 高清PDF.pdf
+Effective STL中文版.pdf
+Effective-C++-第二版.pdf
+Modern C++ Design.pdf
+STL源码剖析(中文完整版带书签).pdf
+陈硕 - C++实践工程学.pdf
+易学C++.pdf
+提高C++性能的编程技术.左飞.扫描版.pdf
+侯捷STL课件.pdf
+深入理解C++11.pdf
+深度探索C++对象模型 PDF中文清晰版.pdf
+跟我一起写makefile.pdf
+大话设计模式C++.pdf
+
+books/C语言:
+21天学通C语言  第7版.pdf
+C Primer Plus 第6版 中文版.pdf
+C Primer Plus（第五版） .pdf
+C 程序设计语言（第2版）.pdf
+C陷阱与缺陷.pdf
+C语言深度解剖 解开程序员面试笔试的秘密.pdf
+C程序设计语言(英文第2版)Prentice Hall.-.The C Programming Language(2nd Edition).pdf
+C语言函数大全.pdf
+C语言参悟之旅.pdf
+C语言深度解剖.pdf
+C语言解析教程.pdf
+C语言程序设计_现代方法.pdf
+C语言从入门到精通  第2版明日科技.pdf
+C语言指针经验总结.PDF
+C和指针（中文版）.pdf
+C语言的科学和艺术.pdf
+C程序设计语言（第2版 新版）.pdf
+C程序设计语言（第2版 新版）习题解答.pdf
+C语言答疑解惑与典型题解.pdf
+C语言常见问题集（问题提高版）.pdf
+[C语言必须知道的300个问题].明日科技.扫描版.pdf
+[学通C语言的24堂课].刘彬彬&孙秀梅.pdf
+c语言入门经典(第5版).pdf
+征服C指针.pdf
+
+books/Go:
+Go_web_编程.pdf
+Go语言实战 .pdf
+Go语言圣经.pdf
+Go语言编程.pdf
+Go并发编程实战.pdf
+Go语言程序设计.pdf
+Go语言标准库参考.pdf
+学习 Go 语言(Golang).pdf
+
+books/Java:
+Apache+Kylin权威指南.pdf
+Camel in Action.pdf
+Effective Java 2nd Edition 英文版.pdf
+Effective Java 中文第二版.pdf
+Hadoop The Definitive Guide.pdf
+Head First Java 中文高清版.pdf
+Head First Servlet and JSP(高清中文版).PDF
+JAVA优化编程.pdf
+JAVA并发编程实践.pdf
+Java 8实战.pdf
+Java2网络协议技术内幕.pdf
+Java解惑(中文).pdf
+Java线程.pdf
+Java夜未眠_程序员的心声.pdf
+Java核心技术(卷1）第8版.pdf
+Java案例开发.pdf
+Java核心技术卷1基础知识原书第10版 .pdf
+Java核心技术卷2高级特性原书第10版.pdf
+Java语言编码规范.PDF
+Java核心技术（卷2）第8版.pdf
+Java并发编程的艺术.pdf
+Java并发程序设计教程.pdf
+Java性能优化权威指南.pdf
+Java从小白到大牛精简版.pdf
+Java编辑思想（第四版）.pdf
+Java设计模式之抽象工厂模式.pdf
+Java数据结构和算法中文第二版.pdf
+Kafka & Mafka技术分享及讨论.pdf
+Maven实战（高清完整带书签）.pdf
+Scala编程中文版(33章全).pdf
+Spark最佳实践.pdf
+Spark机器学习.pdf
+Spark快速大数据分析.pdf
+Spark大数据处理：技术、应用与性能优化(全).pdf
+Spring 5 Recipes, 4th Edition.pdf
+Spring in action 中文版（第4版）.pdf
+[Flex.3实战].（美）艾哈迈德，（美）赫希，（美）阿比德.扫描版.pdf
+[大家网]Java2核心技术II卷.高级特性7th[www.TopSage.com].pdf
+[大家网]Java2核心技术第I卷.基础知识7th[www.TopSage.com].pdf
+spring框架，技术详解及使用指导.pdf
+深入JAVA虚拟机.pdf
+精通Struts基于MVC的Java Web设计与开发.pdf
+精通spring - Mastering Spring.pdf
+轻量级JavaEE企业应用实战.pdf
+深入分析JavaWeb技术内幕.pdf
+阿里巴巴Java开发手册--1.0.0公开版.pdf
+阿里巴巴Java开发手册--1.1.0正式版.pdf
+阿里巴巴Java开发手册--1.2.0升级版.pdf
+阿里巴巴Java开发手册--1.3.0终极版.pdf
+阿里巴巴Java开发手册--1.4.0详尽版.pdf
+阿里巴巴Java开发手册--华山版.pdf
+阿里巴巴Java开发手册--泰山版.pdf
+阿里巴巴Java开发手册-嵩山版.pdf
+深入理解Java虚拟机：JVM高级特性与最佳实践（最新第二版）.pdf
+阿里巴巴Java开发手册v1.2.0.pdf
+深入理解Spark：核心思想与源码分析.pdf
+深入剖析Tomcat.pdf
+《码出高效：Java开发手册》.pdf
+大数据架构师指南.pdf
+大数据之路：阿里巴巴大数据实践.pdf
+
+books/Linux:
+Advanced Programming in the UNIX® Environment.pdf
+Harley Hahn's Guide to UNIX and Linux.pdf
+LINUX防火墙（原书第3版）.pdf
+Linux Kernel Development.pdf
+Linux 内核设计与实现.pdf
+Linux_UNIX系统编程手册（上）.pdf
+Linux_UNIX系统编程手册（下）.pdf
+Linux系统命令及shell脚本实践指南linuxunix技术丛书.pdf
+Linux内核设计与实现 第3版_优先看.pdf
+Linux环境编程：从应用到内核.pdf
+Linux高级程序设计中文第三版杨宗德--人电出版社.pdf
+UNIX网络编程卷1 API.pdf
+UNIX网络编程卷2：进程间通信.pdf
+Unix & Linux 大学教程.pdf
+[Linux命令详解词典].施威铭研究室.扫描版.pdf
+linux内核完全注释.pdf
+linux常用命令大全.pdf
+《UNIX系统编程手册 上》.((德)Michael Kerrisk ).[PDF]@ckook.pdf
+《UNIX系统编程手册 下》.((德)Michael Kerrisk ).[PDF]@ckook.pdf
+深入Linux内核架构 (图灵程序设计丛书·LinuxUNIX系列).pdf
+鸟哥的LINUX私房菜_基础学习篇(第三版).pdf
+鸟哥的Linux私房菜服务器架设篇 第三版 .pdf
+汇编语言基于linux环境第3版.pdf
+
+books/Python:
+1、第一周：数据分析思维.pdf
+2、第二周、业务.pdf
+3、第三周：Excel.pdf
+A Byte of Python3(中文版).pdf
+Deep_Learning_With_Python.pdf
+NumPy Basics.pdf
+Pandas Basics.pdf
+Python Cookbook（第3版）中文版.pdf
+Python for Data Analysis.pdf
+Python3.5.2--入门指南-高清.pdf
+Python3简明教程.pdf
+Python3网络爬虫数据采集.pdf
+Python编程-数据挖掘入门与实践(中文完整版)-图灵程序.pdf
+Python核心编程 第3版 中文版.pdf
+Python学习手册(第4版).pdf
+Python入门教材(中文).pdf
+Python知识手册-V2.0.1.pdf
+Python开发实战.pdf
+Python数据处理.pdf
+Python正则表达式-深入浅出.pdf
+Python高级编程第2版_张亮 阿信（译）_人民邮电出版社_2017-10_v2_完整版.pdf
+Python编程快速上手 让繁琐工作自动化.pdf
+Python开发技术详解.pdf
+Python数据分析基础.pdf
+Python编程入门经典.pdf
+Python网络编程基础.pdf
+Python数据分析实战_2016版.pdf
+Python编程初学者指南.pdf
+Python金融大数据分析.pdf
+Python数据分析与挖掘实战.pdf
+Python数据可视化编程实战.pdf
+Python数据挖掘入门与实践.pdf
+Python编程：从入门到实践.pdf
+Python数据分析基础教程：NumPy学习指南（第2版）.pdf
+Python数据挖掘入门与实践代码_彩图.pdf
+Python灰帽子——黑客与逆向工程师的Python编程之道.pdf
+Tableau 資料視覺化v2.pdf
+Tableau：数据可视化之极速BI.pdf
+python操作word,excel,pdf.pdf
+python基础教程（第二版）.pdf
+sql.pdf
+用Python写网络爬虫.pdf
+利用Python进行数据分析.pdf
+精通Scrapy网络爬虫-刘硕.pdf
+利用python进行数据分析-第二版.pdf
+可爱的Python插图版_文字版.pdf
+笨办法学.Python.（第三版）.pdf
+笨办法学Python（第四版）.pdf
+增长黑客_创业公司的用户与收入增长秘籍 - 范冰.pdf
+数据可视化.pdf
+带书签目录Python3.5.1入门指南中文版.pdf
+数据挖掘导论 - 完整版.pdf
+数据可视化之美.pdf
+编程小白的第一本python入门书.pdf
+数据挖掘原理与算法.pdf
+人人都是数据分析师：Tableau应用实战.pdf
+触手可及的大数据分析工具 Tableau案例集.pdf
+
+books/git:
+Git权威指南.pdf
+从0开始学习GitHub系列.pdf
+专业git中文.pdf
+
+books/前端:
+HTML5与CSS3基础教程（第8版）.pdf
+HTML5揭秘.pdf
+Javascript 高效图形编程-中文版.pdf
+Node.js开发指南.pdf
+[HTML与CSS入门经典(第7版)].（美）奥利弗，（美）莫里森.扫描版.pdf
+[JavaScript.DOM编程艺术（第2版）].pdf
+jQuery技术内幕 深入解析jQuery架构设计与实现原理.pdf
+jQuery权威指南.pdf
+jQuery高级编程，中文完整扫描版(jb51.net) 2.pdf
+javascript高级程序设计.pdf
+nodebook.pdf
+【JavaScript高级程序设计（第3版）】中文 高清 .pdf
+疯狂ajax讲义.pdf
+牛客网Java工程师校招面试题库.pdf
+招聘笔记.pdf
+深入浅出Node.js.pdf
+
+books/数据库:
+Database System Concepts.pdf
+MongoDB权威指南.pdf
+MySQL技术内幕  InnoDB存储引擎  第2版.pdf
+MySQL必知必会（文字版）.pdf
+Redis实战.pdf
+Redis开发与运维.pdf
+Redis设计与实现.pdf
+SQLite 权威指南.pdf
+SQL查询的艺术.pdf
+深入浅出MySQL++数据库开发、优化与管理维护+第2版+唐汉明.pdf
+研磨设计模式.pdf
+数据库系统概念.pdf
+分布式数据库系统  大数据时代新型数据库技术__于戈等编著_北京：机械工业出版社_P412_2016.01_13961615.pdf
+分布式数据库系统原理.第3版.pdf
+数据库系统实现（第二版）.pdf
+
+books/软技能:
+how-to-be-a-programmer-cn.pdf
+技术之瞳+阿里巴巴技术笔试心得.pdf
+人月神话-中文-目录-文字版.pdf
+软件工程-实践者的研究方法.8th.pdf
+代码大全2中文版.pdf
+黑客与画家.pdf
+代码整洁之道.pdf
+程序员健康指南.pdf
+程序开发心理学.pdf
+阿里双十一技术.pdf
+概念与技术（第3版）.pdf
+孙金城丨阿里巴巴-Blink SQL关键技术及实现原理.pdf
+浪潮之巅（完整版）.pdf
+华为大数据应用开发指南.pdf
+华为金融大数据解决方案汇报V2.0.pdf
+重构：改善既有代码的设计（第2版）.pdf
+大数据之路：阿里巴巴大数据实践.pdf
+敏捷软件开发：原则、模式与实践.pdf
+《码农翻身：用故事给技术加点料》_刘欣.pdf
+奔跑吧，程序员：从零开始打造产品、技术和团队.pdf
+
+books/操作系统:
+30天自制操作系统 (图灵程序设计丛书).pdf
+Compilers_ Principles, Techniques, and Tools.pdf
+Computer Systems_ A Programmer's Perspective.pdf
+Orange's一个操作系统的实现.pdf
+编译原理.pdf
+现代操作系统 - 英文版.pdf
+计算机系统要素 - 从零开始构建现代计算机.pdf
+操作系统真象还原.pdf
+操作系统之哲学原理 第2版.pdf
+深入理解计算机系统 第3版.pdf
+自己动手写操作系统.pdf
+分布式系统概念与设计 原书第5版.pdf
+自己动手编写操作系统.pdf
+操作系统精髓与设计原理 第8版.pdf
+现代操作系统（第三版）中文版.pdf
+
+books/数学相关:
+Computational Complexity_ A Modern Approach.pdf
+Discrete Mathematics and Its Applications.pdf
+Operations Research Applications And Algorithms.pdf
+数学之美.pdf
+程序员的数学1_清晰版.pdf
+程序员的数学3-线性代数.pdf
+概率论与数理统计 - 陈希孺.pdf
+离散数学及其应用.pdf
+计算复杂性：现代方法.pdf
+
+books/汇编语言:
+80x86汇编语言程序设计教程.pdf
+x86汇编语言  从实模式到保护模式完整版.pdf
+x86汇编语言-从实模式到保护模式.pdf
+【710008】x86汇编语言  从实模式到保护模式_13217933.pdf
+汇编语言(第3版）- 王爽_清晰PDF.pdf
+《汇编语言(第3版) 》王爽著.pdf
+老“码”识途 从机器码到框架的系统观逆向修炼之路.pdf
+
+books/笔试面试:
+《labuladong的算法小抄官方完整版》
+《剑指offer名企面试官精讲典型编程题》
+《阿里Java面试问题大全》
+《程序员面试宝典》
+2016奇虎360C++研发工程师内推笔试题
+2016奇虎360JAVA研发工程师内推笔试题
+C++牛客大佬总结面试经验
+Java面试突击-V3
+Java程序员面试宝典
+c++面经总结
+搜狗2015JAVA工程师笔试题
+百度2015前端研发笔试卷
+百度2015安全研发笔试卷
+百度2015大数据云计算研发笔试卷
+美团2016研发工程师模拟笔试题
+腾讯2016研发工程师笔试真题一
+腾讯2016研发工程师笔试真题三
+腾讯2016研发工程师笔试真题二
+阿里Java面试问题大全
+人人网2015研发笔试卷A
+人人网2015研发笔试卷E
+牛客网Java工程师校招面试题库
+牛客网Java工程师校招面试题库-1
+招聘笔记
+阿里巴巴2015校招研发
+阿里巴巴2016数据挖掘工程师笔试
+阿里巴巴2016前端开发工程师笔试一
+阿里巴巴2016前端开发工程师笔试二
+阿里巴巴2016研发工程师笔试选择题一
+阿里巴巴2016研发工程师笔试选择题三
+阿里巴巴2016研发工程师笔试选择题二
+阿里巴巴2016研发工程师笔试选择题四
+程序员面试宝典
+百度研发工程师2015深圳笔试卷
+机器学习常见面试题
+机器学习算法工程师带你去面试
+
+books/笔试面试/2016奇虎360C++研发工程师内推笔试题:
+2016奇虎360C++研发工程师内推笔试题.zip
+
+books/笔试面试/2016奇虎360JAVA研发工程师内推笔试题:
+2016奇虎360JAVA研发工程师内推笔试题.zip
+
+books/笔试面试/C++牛客大佬总结面试经验:
+C++牛客大佬总结面试经验.zip
+
+books/笔试面试/Java面试突击-V3:
+Java面试突击-V3.zip
+
+books/笔试面试/Java程序员面试宝典:
+Java程序员面试宝典.zip
+
+books/笔试面试/c++面经总结:
+c++面经总结.zip
+
+books/笔试面试/搜狗2015JAVA工程师笔试题:
+搜狗2015JAVA工程师笔试题.zip
+
+books/笔试面试/百度2015前端研发笔试卷:
+百度2015前端研发笔试卷.zip
+
+books/笔试面试/百度2015安全研发笔试卷:
+百度2015安全研发笔试卷.zip
+
+books/笔试面试/百度2015大数据云计算研发笔试卷:
+百度2015大数据云计算研发笔试卷.zip
+
+books/笔试面试/美团2016研发工程师模拟笔试题:
+美团2016研发工程师模拟笔试题.zip
+
+books/笔试面试/腾讯2016研发工程师笔试真题一:
+腾讯2016研发工程师笔试真题一.zip
+
+books/笔试面试/腾讯2016研发工程师笔试真题三:
+腾讯2016研发工程师笔试真题三.zip
+
+books/笔试面试/腾讯2016研发工程师笔试真题二:
+腾讯2016研发工程师笔试真题二.zip
+
+books/笔试面试/阿里Java面试问题大全:
+阿里Java面试问题大全.zip
+
+books/笔试面试/人人网2015研发笔试卷A:
+人人网2015研发笔试卷A.zip
+
+books/笔试面试/人人网2015研发笔试卷E:
+人人网2015研发笔试卷E.zip
+
+books/笔试面试/牛客网Java工程师校招面试题库:
+牛客网Java工程师校招面试题库.zip
+
+books/笔试面试/牛客网Java工程师校招面试题库-1:
+牛客网Java工程师校招面试题库-1.zip
+
+books/笔试面试/招聘笔记:
+招聘笔记.zip
+
+books/笔试面试/阿里巴巴2015校招研发:
+阿里巴巴2015校招研发.zip
+
+books/笔试面试/阿里巴巴2016数据挖掘工程师笔试:
+阿里巴巴2016数据挖掘工程师笔试.zip
+
+books/笔试面试/阿里巴巴2016前端开发工程师笔试一:
+阿里巴巴2016前端开发工程师笔试一.zip
+
+books/笔试面试/阿里巴巴2016前端开发工程师笔试二:
+阿里巴巴2016前端开发工程师笔试二.zip
+
+books/笔试面试/阿里巴巴2016研发工程师笔试选择题一:
+阿里巴巴2016研发工程师笔试选择题一.zip
+
+books/笔试面试/阿里巴巴2016研发工程师笔试选择题三:
+阿里巴巴2016研发工程师笔试选择题三.zip
+
+books/笔试面试/阿里巴巴2016研发工程师笔试选择题二:
+阿里巴巴2016研发工程师笔试选择题二.zip
+
+books/笔试面试/阿里巴巴2016研发工程师笔试选择题四:
+阿里巴巴2016研发工程师笔试选择题四.zip
+
+books/笔试面试/程序员面试宝典:
+程序员面试宝典.zip
+
+books/笔试面试/百度研发工程师2015深圳笔试卷:
+百度研发工程师2015深圳笔试卷.zip
+
+books/笔试面试/机器学习常见面试题:
+机器学习常见面试题.zip
+
+books/笔试面试/机器学习算法工程师带你去面试:
+机器学习算法工程师带你去面试.zip
+
+books/设计模式:
+C++版常见设计模式解析与实现.pdf
+HeadFirst设计模式（中文版）.pdf
+head first design patterns.pdf
+敏捷开发-设计模式.pdf
+图解设计模式.pdf
+大话设计模式.pdf
+
+books/计算机系统:
+Code - The Hidden Language of Computer Hardware and Software.pdf
+Patterson-Computer Organization and Design_The Hardware_Software Interface.pdf
+《大话计算机》.pdf
+程序是怎样跑起来的.pdf
+计算机是怎样跑起来的.pdf
+计算机组成与设计：硬件_软件接口.pdf
+程序员的自我修养—链接、装载与库--书签目录.pdf
+
+books/计算机网络:
+Computer Networking_ A Top-down Approach.pdf
+Computer Networks, A Systems Approach.pdf
+HTTP权威指南.pdf
+Http核心总结.pdf
+TCP-IP详解卷1：协议 原书第2版.pdf
+TCP-IP详解卷三.pdf
+TCP-IP详解卷二：实现.pdf
+Wireshark 数据包分析实战（第二版）- 高清重置版.pdf
+Wireshark 数据包分析实战（第二版）.pdf
+Wireshark数据包分析实战 - 笔记.pdf
+Wireshark网络分析的艺术.pdf
+Wireshark网络分析就这么简单.pdf
+Wireshark数据包分析实战第一版.pdf
+tcp源码分析.pdf
+图解HTTP .pdf
+图解TCPIP(第5版).pdf
+计算机网络 第七版.pdf
+计算机网络-自顶向下方法-第6版.pdf
+网络是怎样连接的 (图灵程序设计丛书).pdf
+计算机网络：系统方法.pdf
+计算机网络：自顶向下方法课后习题参考答案.pdf
+
+books/数据结构与算法:
+3.1剑指OFFER  名企面试官精讲典型编程题  第2版.pdf
+JavaScrit数据结构与算法（第2版）.pdf
+Java数据结构和算法.（第二版）.pdf
+Sedgewick-Algorithms.pdf
+[算法分析与设计].Michael.T.Goodrich等.扫描版[小电驴www.XiaoDianLv.com].pdf
+cookbook-LeetCode.pdf
+labuladong的算法小抄官方完整版.pdf
+剑指 Offer.pdf
+剑指OFFER  名企面试官精讲典型编程题  第2版.pdf
+数据结构 C语言 严蔚敏 pdf.pdf
+编程珠玑 第二版 人民邮电出版社.pdf
+编程珠玑 英文第二版-Programming.Pearls.pdf
+编程之美-完整版.pdf
+算法图解.pdf
+算法谜题.pdf
+背包九讲.pdf
+算法（第4版）.pdf
+算法导论_原书第3版_CHS.pdf
+啊哈！算法 哈磊..pdf
+大话数据结构.pdf
+数据结构与算法 Python语言描述_裘宗燕.pdf
+算法导论中文版.pdf
+挑战程序设计竞赛(第1版).pdf
+挑战程序设计竞赛(第2版).pdf
+妙趣横生的算法（C语言实现 第2版）.pdf
+程序员代码面试指南 IT名企算法与数据结构题目最优解（左程云著） .pdf
+数据结构与算法分析C++描述.pdf
+严蔚敏：数据结构题集(C语言版).pdf
+数据结构与算法分析：C语言描述_原书第2版_高清版.pdf
+数据结构与算法分析——Java语言描述.pdf
+漫画算法：小灰的算法之旅.pdf
+计算机程序设计艺术（第一卷）.pdf
+计算机程序设计艺术（第三卷）.pdf
+计算机程序设计艺术（第二卷）.pdf

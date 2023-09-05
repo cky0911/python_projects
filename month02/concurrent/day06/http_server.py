@@ -117,7 +117,9 @@ if __name__ == '__main__':
     # 需要用户自己决定的内容
     HOST = '0.0.0.0'
     PORT = 8000
-    DIR = "./static"  # 网页存储位置
+    # 网页存储位置
+    DIR = "./static"
 
     httpd = HTTPServer(HOST, PORT, DIR)
-    httpd.serve_forever()  # 服务启动入口
+    # 服务启动入口
+    httpd.serve_forever()

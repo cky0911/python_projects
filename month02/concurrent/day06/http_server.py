@@ -56,19 +56,20 @@ class HTTPServer:
         # 接收http请求
         request = connfd.recv(4096)
 
-        # 客户端断开
+        # 客户端断开的情况
         if not request:
             self.rlist.remove(connfd)
             connfd.close()
             return
 
-        # 提起请求内容 (将字节串按行切割)
+        # 提起请求内容 (将字节串按行切割) GET / HTTP/1.1
+        # 获取请求行
         request_line = request.splitlines()[0]
         info = request_line.decode().split(' ')[1]
         print('请求内容:', info)
 
         # 根据请求内容进行数据整理
-        # 分为两类: 1. 请求网页,2. 其他
+        # 分为两类: 1.请求网页,  2.其他
         if info == '/' or info[-5:] == '.html':
             self.get_html(connfd, info)
         else:
@@ -80,6 +81,7 @@ class HTTPServer:
             # 请求主页
             filename = self.dir + '/index.html'
         else:
+            # 请求具体的网页
             filename = self.dir + info
         try:
             fd = open(filename)
@@ -90,6 +92,7 @@ class HTTPServer:
             response += '\r\n'
             response += "<h1>Sorry....</h1>"
         else:
+            # 网页存在
             response = "HTTP/1.1 200 OK\r\n"
             response += "Content-Type:text/html\r\n"
             response += '\r\n'

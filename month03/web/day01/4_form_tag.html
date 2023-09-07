@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- 表单元素 -->
+    <!--action：提交到哪里  #提交到本地-->
+    <form action="#">
+        <!-- 表单控件 -->
+        <div>
+            <!--for与id属性关联 点中文字会聚焦到输入框-->
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="username" placeholder="请输入用户名">
+        </div>
+        <div>
+            <label for="pwd">密码：</label>
+            <input type="password" id="pwd" name="password" placeholder="请输入密码">
+        </div>
+        <div>
+            <!--单选按钮 相互排斥需要加上相同的name属性值-->
+            <label for="man">性别：</label>
+            <input type="radio" checked name="sex1" id="man" value="1">男
+            <input type="radio" name="sex2" value="2">女
+        </div>
+        <div>
+            <label for="marry">婚否：</label>
+            <input type="checkbox" id="marry" name="marry" checked>
+        </div>
+        <div>
+            <label for="tag">爱好：</label>
+            <input type="checkbox" checked name="like" id="tag">游戏
+            <input type="checkbox" name="like2">编程
+            <input type="checkbox" name="like3">阅读
+        </div>
+        <div>
+            <!--下拉列表-->
+            <label for="education">学历：</label>
+            <select name="edu" id="education">
+                <option value="">请选择</option>
+                <option value="1">大专</option>
+                <option value="2">本科</option>
+                <option selected value="3">研究生</option>
+            </select>
+        </div>
+        <div>
+            <!--输入多行多列文本内容-->
+            <label for="description">简介：</label>
+            <textarea name="multi_text" id="description"
+                   cols="30"
+                   rows="10">
+            </textarea>
+        </div>
+        <!--<input type="hidden" name="type" value="index">-->
+        <div>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+    <!-- 示例1 -->
+    <!-- 创建表格标签 -->
+    <!-- 快捷方式：table>tr*2>td*3 -->
+    <!-- border加边框  cellspacing改间距 -->
+    <table border="1" width="30%" cellspacing="0">
+        <!-- 创建行标签 -->
+        <tr>
+            <!-- 行中创建单元格以显示数据 -->
+            <!-- th展示标题 加粗显示 -->
+            <th bgcolor="#ccc">姓名</th>
+            <th bgcolor="#ccc">年龄</th>
+        </tr>
+        <tr>
+            <td align="center">张三</td>
+            <td align="center">20</td>
+        </tr>
+        <tr>
+            <td align="center">李四</td>
+            <td align="center">21</td>
+        </tr>
+        <tr>
+            <td align="center">王五</td>
+            <td align="center">22</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 示例2 -->
+    <table border="1" width="20%" cellspacing="0">
+        <!-- caption 表格主题 -->
+        <caption>通讯录</caption>
+        <tr>
+            <th>姓名</th>
+            <!--colspan 跨列合并单元格-->
+            <th colspan="2">电话号码</th>
+        </tr>
+        <tr>
+            <td>王小虎</td>
+            <td>01101101</td>
+            <td>13828722</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 示例3 -->
+    <table border="1" width="20%" cellspacing="0">
+        <caption>通讯录</caption>
+        <tr>
+            <th>姓名</th>
+            <th>电话电码</th>
+        </tr>
+        <tr>
+            <!--rowspan	跨行合并单元格-->
+            <td rowspan="2">王小虎</td>
+            <td>01010449</td>
+        </tr>
+        <tr>
+            <td>1373332335</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!--课程表练习-->
+    <table width="50%" cellspacing="0" border="1">
+        <caption>课程表</caption>
+        <tr>
+            <td colspan="3" style="background-color:#EC7AB0;height:45px"> &nbsp;&nbsp;姓名：</td>
+            <td colspan="3" style="background-color:#EC7AB0"> &nbsp;&nbsp;班级：</td>
+        </tr>
+        <tr>
+            <td style="background-color:#7ECFC9;height:45px;text-align:center">星期</td>
+            <td style="background-color:#7ECFC9;text-align:center">一</td>
+            <td style="background-color:#7ECFC9;text-align:center">二</td>
+            <td style="background-color:#7ECFC9;text-align:center">三</td>
+            <td style="background-color:#7ECFC9;text-align:center">四</td>
+            <td style="background-color:#7ECFC9;text-align:center">五</td>
+        </tr>
+        <tr>
+            <td rowspan="4" style="background-color:#9A6EAB;height:180px;text-align:center">上<br/><br/><br/>午</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+            <td style="text-align:center">语文</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="background-color:#6EBE41;height:45px;text-align:center">午休时间</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="background-color:#F49E9F;height:135px;text-align:center">下<br/><br/><br/>午</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+            <td style="text-align:center">英语</td>
+        </tr>
+    </table>
+</body>
+</html>

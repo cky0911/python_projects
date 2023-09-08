@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+        p{
+            color:pink;
+        }
+        #p1{
+            color:orange;
+        }
+        .cls1_blue{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <!--1.标签选择器:根据标签名匹配文档中所有该标签 性能最低-->
+    <p>
+        床前明月光，疑是地上霜。
+    </p>
+    <p>
+        举头望明月，低头思故乡。
+    </p>
+    <!--2.id选择器:根据标签的 id 属性值匹配文档中惟一的标签，id具有唯一性，不能重复使用-->
+    <p id="p1">
+        千山鸟飞绝，万径人踪灭。
+        孤舟蓑笠翁，独钓寒江雪。
+    </p>
+    <!--3.class选择器/类选择器:根据标签的class属性值匹配相应的标签,class属性值可以重复使用,实现样式的复用-->
+    <div class="cls1_blue">today</div>
+    <p class="cls1_blue">tomorrow</p>
+    <h1 class="cls1_blue">yesterday</h1>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        .box{
+            width: 660px;
+            background-color: cadetblue;
+            text-align: center;
+        }
+        .box:hover{
+            background-color: gold;
+        }
+        .form:focus{
+            background-color: red;
+        }
+        #num:focus{
+            background-color: pink;
+        }
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: orange;
+        }
+        a:hover{
+            color: blue;
+        }
+        a:active{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 7.伪类选择器:为标签的不同状态分别设置样式,必须与基础选择器结合使用 -->
+    <!-- 有一个div元素,默认一个背景色,移动上后编程另外一个背景色 -->
+    <div class="box">
+        朝辞白帝彩云间，千里江陵一日还。
+        两岸猿声啼不住，轻舟已过万重山。
+    </div>
+
+    <form action="#">
+        <label for="name">姓名：</label>
+        <input class="form" type="text" id="name" name="name">
+    </form>
+
+    <form action="#">
+        <label for="num">学号：</label>
+        <input type="text" id="num" name="num">
+    </form>
+
+    <a href="https//:www.baidu.com" target="_blank">百度一下</a>
+</body>
+</html>

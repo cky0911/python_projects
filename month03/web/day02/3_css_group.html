@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>群组选择器</title>
+    <style>
+        div,p,h2{
+            margin: 0;
+            padding: 0;
+            color:purple;
+        }
+        div p{
+            color:brown;
+        }
+        div p span{
+            color:gold;
+        }
+        div>span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 4.群组选择器:为一组标签统一设置样式 -->
+    <div>葡萄美酒夜光杯</div>
+    <p>欲饮琵琶马上催</p>
+    <p>醉卧沙场君莫笑</p>
+    <h2>古来征战几人回</h2>
+
+    <!-- 5.后代选择器:匹配满足选择器的所有后代标签(包含直接子标签和间接子标签) -->
+    <div>
+        <p>
+            岐王宅里寻常见，崔九堂前几度闻。
+            正是江南好风景，落花时节又逢君。
+            <span>
+                江南逢李龟年
+            </span>
+        </p>
+    </div>
+
+    <!-- 6.子代选择器:匹配满足选择器的所有直接子标签 -->
+    <div>
+        <span>
+            月落乌啼霜满天，江枫渔火对愁眠。
+            姑苏城外寒山寺，夜半钟声到客船。 
+        </span>
+    </div>
+</body>
+</html>

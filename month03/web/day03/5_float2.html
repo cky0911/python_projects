@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float2</title>
+    <style>
+        .news{
+            width: 608px;
+            border: solid 1px red;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+        .float_left{
+            float: left;
+        }
+        .float_right{
+            float: right;
+        }
+        img{
+            /* float: left; */
+            width: 400px;
+        }
+        p{
+            /* float: right; */
+            width: 200px;
+            padding: 0;
+            margin: 0;
+            margin-left: 8px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <img class="float_left" src="imgs/img_01.jpg" alt="404">
+        <p class="float_right">&nbsp;&nbsp;&nbsp;&nbsp;时间是无尽的，渺小的我短暂而一生，哪怕是悟出了什么道理，也无人可懂，无人可诉，唯有孤独相伴，孑然一身。</p>
+    </div>
+    <div class="news">
+        <img class="float_right" src="imgs/img_01.jpg" alt="404">
+        <p class="float_left">&nbsp;&nbsp;&nbsp;&nbsp;时间是无尽的，渺小的我短暂而一生，哪怕是悟出了什么道理，也无人可懂，无人可诉，唯有孤独相伴，孑然一身。</p>
+    </div>
+</body>
+</html>

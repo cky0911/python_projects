@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 固定宽度元素的居中实现方式: margin: 0 auto; -->
+    <style>
+        #test{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 0 auto;
+            border: 2px solid blue;
+        }
+        #test2{
+            width: 0px;
+            height: 0px;
+            margin: 0 auto;
+            border: 50px solid blue;
+        }
+        #test3{
+            width: 0px;
+            height: 0px;
+            margin: 0 auto;
+            border: 50px solid blue;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+        #test4{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 0 auto;
+            border: 2px solid blue;
+            border-radius: 5px 15px 20px 25px;
+        }
+        input{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <hr>
+    <div id="test2"></div>
+    <hr>
+    <!-- 网页三角标制作 -->
+    <div id="test3"></div>
+    <hr>
+    <!-- 圆角边框 -->
+    <div id="test4"></div>
+    <!-- 实现一个圆的步骤: 首先必须是一个正方形元素, 将边框半径设置为高度的一半 
+    border-radius: 50%
+    -->
+    <hr>
+    <!-- 轮廓线 -->
+    <div id="test5">
+        <input type="text">
+        <input type="submit" value="提交">
+        <input type="button" value="操作">
+    </div>
+</body>
+</html>

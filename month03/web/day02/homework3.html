@@ -5,45 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- 以内嵌的方式编写页面的样式 -->
+    <title>作业3</title>
     <style>
-        /* *号表示全部的元素 */
-        * {
+        h3,h5,p{
             margin: 0;
             padding: 0;
         }
-        #pic {
-            border: solid 0px red;
-            width: 171px;
-            /* 居中的固定写法 */
+        #goods{
+            width: 300px;
             margin: 0 auto;
+            border: solid 1px #ccc;
+            padding: 20px 15px;
         }
-        #pic p {
+        .top{
+            width: 100%;
+            border: solid 0px red;
+        }
+        img{
+            width: 100%;
+        }
+        .title{
             text-align: center;
-            font-size: 12px;
+            padding: 10px 0px 8px 0px;
+            background-color: #eee;
+        }
+        .mid{
+            border: solid 0px red;
+            overflow: hidden;
+        }
+        .mid>.left{
+            float: left;
+            width: 145px;
+            text-align: center;
+        }
+        .mid>.right{
+            float: right;
+            width: 145px;
+            text-align: center;
+        }
+        a:link{
             color: #666;
+            text-decoration: none;
+            font-size: 14px;
         }
-        #pic h5 {
-            text-align: center;
+        a{
+            margin-right: 10px;
         }
     </style>
 </head>
 
 <body>
-    <!-- 1.创建一个页面。
-         2.添加页面元素。
-         3.编写页面样式。
-         4.调优代码。 -->
-
-    <div id="pic">
-        <h3>众筹</h3>
-        <figure>
-            <img src="../imgs/img01.png" alt="">
-        </figure>
-        <h5>苹果I-Watch呼吸表带</h5>
-        <p>一场手腕的呼吸</p>
+    <div id="goods">
+        <div class="top">
+            <h3>众筹</h3>
+            <div class="img">
+                <img src="imgs/img_01.jpg" alt="">
+            </div>
+            <div class="title">
+                <h3>Apple iPhone 14 (A2884) 128GB 星光色</h3>
+                <p>支持移动联通电信5G 双卡双待手机</p>
+            </div>
+            <div class="mid">
+                <div class="left">
+                    <img src="imgs/img_01.jpg" alt="">
+                    <h5>大圣原版手偶</h5>
+                </div>
+                <div class="right">
+                    <img src="imgs/img_01.jpg" alt="">
+                    <h5>智能运动鞋</h5>
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="#">智能手表</a>
+                <a href="#">创意新品</a>
+                <a href="#">时尚家居</a>
+                <a href="#" style="color: orangered;">[动漫周边]</a>
+                <a href="#">指纹手机</a>
+            </div>
+        </div>
     </div>
 </body>
-
 </html>

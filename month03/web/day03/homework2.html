@@ -6,47 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>homework2</title>
     <style>
-        h3,p,figure{
-          margin: 0;
-          padding: 0;
-        }
-       #pro{
-           width: 179px;
-           height: 186px;
-           border: solid 1px #ccc;
-           margin: 0 auto;
+       #pic{
+            width: 179px;
+            height: 186px;
+            border: solid 1px #ccc;
+            margin: 0 auto;
        }
-       #pro .tip{
-           width: 32px;
-           background-color: #f35a5c;
-           color:#fff;
-           border-radius: 0 3px 3px 0;
-           margin-left:3px;
-           padding: 0px 3px 3px 3px;
+       #pic>div:nth-child(1){
+            background-color: #f35d5c;
+            color: #fff;
+            float: left;
+            margin-left: 2px;
+            padding: 2px;
+            border-radius: 0 3px 3px 0;
        }
-       #pro h3{
-           margin-left:44px;
-           margin-top:-5px;
+       #pic>div:nth-child(2){
+            clear: left;
        }
-       #pro .desc{
-           margin-left:44px;
-           color:#666;
+       #pic>div:nth-child(3){
+            margin-left: 45px;
+            font-size: 20px;
        }
-       #pro figure{
-           text-align: center;
-           border:solid 0px red;
-           margin-top: 15px;
+       #pic>div:nth-child(4){
+            margin-left: 43px;
+            font-size: 18px;
+            color: #c9c9c9;
+       }
+       #pic>div:nth-child(5){
+            text-align: center;
+            margin-top: 6px;
        }
     </style>
 </head>
 <body>
-    <div id="pro">
-        <p class="tip">低价</p>
-        <h3>母婴馆</h3>
-        <p class="desc">秒杀低至1元</p>
-        <figure>
-            <img src="imgs/img_01.jpg" alt="" style="width: 100px;">
-        </figure>
+    <div id="pic">
+        <div>
+            低价
+        </div>
+        <!-- 上面浮动 这里只用作清除 无其他功能 -->
+        <!-- <div style="clear: left;"></div> -->
+        <div></div>
+        <div>
+            母婴馆
+        </div>
+        <div>
+            秒杀低至一元
+        </div>
+        <div>
+            <img width="100px" src="imgs/img_01.jpg" alt="">
+        </div>
     </div>
 </body>
 </html>

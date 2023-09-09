@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <style>
+        #bg{
+            width: 829px;
+            height: 500px;
+            border: solid 1px red;
+            margin: 0 auto;
+            background-image: url("imgs/back_img_01.jpeg");
+            background-repeat: no-repeat;
+            /* background-position: 10px 20px; */
+            /* background-position: center; */
+            /* background-size: 500px 300px; */
+            /* 百分比是相对于背景元素的宽高值而言 */
+            background-size: 50% 50%;
+        }
+        #spirit1{
+            margin: 0 auto;
+            border: solid 1px blue;
+            /* 设置显示背景图片的宽度和高度 */
+            width: 58px;
+            height: 67px;
+            background-image: url(imgs/spirit2.png);
+        }
+        #spirit2{
+            margin: 0 auto;
+            border: solid 1px blue;
+            /* 设置显示背景图片的宽度和高度 */
+            width: 58px;
+            height: 67px;
+            background-image: url(imgs/spirit2.png);
+            background-position: 0 -67px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg">
+
+    </div>
+    <!-- 精灵图片 -->
+    <div id="spirit1">
+
+    </div>
+    <div id="spirit2">
+
+    </div>
+</body>
+</html>

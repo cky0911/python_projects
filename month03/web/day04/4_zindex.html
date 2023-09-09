@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>堆叠次序</title>
+    <style>
+        #picture{
+            position: relative;
+            width: 400px;
+            height: 500px;
+            border: solid 1px red;
+            margin: 0 auto;
+        }
+        #picture>div:nth-child(1){
+            position: absolute;
+            left: 50px;
+            top: 30px;
+            /* 默认值为1 */
+            /* z-index: 2; */
+        }
+        #picture>div:nth-child(2){
+            position: absolute;
+            left: 150px;
+            top: 130px;
+        }
+        /* 改变图片的次序 伪类选择器 鼠标悬浮改变属性值 */
+        #picture>div:nth-child(1):hover{
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="picture">
+        <div>
+            <img src="imgs/img06.jpg" alt="">
+        </div>
+        <div>
+            <img src="imgs/img06.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

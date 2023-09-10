@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js基础</title>
+    <!-- 这里写script也ok -->
+    <!-- <script>
+        a = prompt("输入数字: ")
+        alert(a)
+        alert("这里是顶部");
+
+        console.log("接收输入的值: " + a)
+    </script> -->
+</head>
+<body>
+    <!-- 在哪个div里面写就显示在哪个div中 -->
+    <div>
+        <script>
+            document.write("document.write('xxx')；实现在动态在网页中写入内容")
+        </script>
+    </div>
+    <!-- 三种实现方式: 元素绑定事件  文档内嵌  外部链接 -->
+    <!-- 1.元素绑定事件  -->
+    <div>
+        <!-- 普通按钮 不用于提交数据 -->
+        <input type="button" value="点一下" onclick="alert('啥也没有哦')">
+    </div>
+    <!-- 文档渲染结束后，再次执行document.write方法，会重写网页内容 -->
+    <div>
+        <input type="button" value="清除所有" onclick="document.write('清空之后的文本')">
+    </div>
+    <!-- 2.文档内嵌 -->
+    <script>
+        alert("这里是底部");
+    </script>
+    <!-- 3.外部链接 -->
+    <script src="js/js_01.js"></script>
+</body>
+</html>

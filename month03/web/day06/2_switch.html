@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="sw">
+        <input type="range"
+               min="1"
+               max="10"
+               value="3"
+               id="num"
+               step="1"
+               onchange="func()">
+        <div id="tip"></div>
+        <img src="imags/back_img_01.jpeg" id="img1" alt="">
+    </div>
+
+    <!-- <script>
+        function func(){
+            var a = document.getElementById("num");
+            var b = document.getElementById("tip");
+            b.innerText= a.value;
+            switch(a.value){
+                case "1":
+                    console.log("输入为1");
+                    break;
+                case "2":
+                    console.log("输入为2");
+                    break;
+                case "3":
+                    console.log("输入为3");
+                    break;
+                default:
+                    console.log("无效输入");
+            }
+        }
+    </script> -->
+    <!-- 方式2: 获取对象绑定对象 -->
+    <script>
+        var a = document.getElementById("num");
+        a.onchange = function(){
+            var b = document.getElementById("tip");
+            b.innerText = a.value;
+            switch (a.value) {
+                case "1":
+                    console.log("输入为1");
+                    break;
+                case "2":
+                    console.log("输入为2");
+                    break;
+                case "3":
+                    console.log("输入为3");
+                    break;
+                case "9":
+                    // 图片隐藏
+                    document.getElementById("img1").style.display = "none";
+                    break;    
+                default:
+                    console.log("无效输入");
+            }
+        }
+    </script>
+</body>
+</html>

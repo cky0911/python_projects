@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework2</title>
+    <style>
+        body{
+            font-size: 13px;
+        }
+        #bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+        #box{
+            border: solid 0px #ccc;
+            width: 260px;
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            margin-left: -130px;
+            top: 50%;
+            margin-top: -75px;
+            display: none;
+        }
+        #box .title{
+            background-color: #008081;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        #box .con{
+            overflow: hidden;
+            border: solid 0px blue;
+            background-color: #fff;
+        }
+        #box .con .img{
+            float: left;
+            margin: 10px 10px 0px 10px;
+        }
+        #box .con .rright{
+            float: left;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #box .con .rright .btn{
+            text-align: center;
+        }
+        #box .con .rright .btn>button{
+            background-color: #008081;
+            width: 62px;
+            border: none;
+            color: #fff;
+            padding: 5px 0px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnShow">弹出</button>
+    <div id="bg"></div>
+    <!-- 定义一个弹框 -->
+    <div id="box">
+        <div class="title">
+            提示
+        </div>
+        <div class="con">
+            <div class="img">
+                <img width="60px" src="imags/alert.png" alt="">
+            </div>
+            <div class="rright">
+                <p>真的要删除这条记录吗?</p>
+                <div class="btn">
+                    <button id="close">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btnShow = document.getElementById("btnShow");
+        var divBg = document.getElementById("bg");
+        var divBox = document.getElementById("box");
+        var btnClose = document.getElementById("close");
+        btnShow.onclick = function(){
+            divBg.style.display = "block";
+            divBox.style.display = "block";
+        }
+        btnClose.onclick = function(){
+            divBg.style.display = "none";
+            divBox.style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radios</title>
+    <style>
+        #pic{
+            width: 500px;
+            margin: 0 auto;
+            border: solid 0px red;
+        }
+        #pic input{
+            margin-right: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pic">
+        <div class="img">
+            <img id="img" width="500px" src="imags/back_img_01.jpeg" alt="">
+        </div>
+        <fieldset>
+            <legend>选择按钮</legend>
+            <input checked type="radio" name="choice" id="pic1">
+            <input type="radio" name="choice" id="pic2">
+            <input type="radio" name="choice" id="pic3">
+            <input type="radio" name="choice" id="pic4">
+            <input type="radio" name="choice" id="pic5">
+        </fieldset>
+    </div>
+    <script>
+        var radio1 = document.getElementById("pic1");
+        var radio2 = document.getElementById("pic2");
+        var radio3 = document.getElementById("pic3");
+        var radio4 = document.getElementById("pic4");
+        var radio5 = document.getElementById("pic5");
+        var imgShow = document.getElementById("img");
+        radio1.onclick = function(){
+            imgShow.setAttribute("src", "imags/back_img_01.jpeg");
+        }
+        radio2.onclick = function(){
+            imgShow.setAttribute("src", "imags/back_img_02.jpeg");
+        }
+        radio3.onclick = function(){
+            imgShow.setAttribute("src", "imags/back_img_03.jpeg");
+        }
+        radio4.onclick = function(){
+            imgShow.setAttribute("src", "imags/back_img_04.jpeg");
+        }
+        radio5.onclick = function(){
+            imgShow.setAttribute("src", "imags/back_img_05.jpeg");
+        }
+    </script>
+</body>
+</html>

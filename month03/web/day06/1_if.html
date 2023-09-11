@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分支选择</title>
+    <style>
+        #nav{
+            width: 200px;
+            border: solid 1px #ccc;
+            margin: 0 auto;
+        }
+        #nav>.title{
+            text-align: center;
+            border-bottom: solid 1px #ccc;
+            padding: 5px 8px;
+            background-color: #eee;
+            /* 手状 */
+            cursor: pointer;
+        }
+        #nav>.cont{
+            padding: 8px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div class="title" onclick="clickFunc()">编程之美</div>
+        <div class="cont">
+            python, 从入门到精通;程序员面试官方指南
+            python, 从入门到精通;程序员面试官方指南
+            python, 从入门到精通;程序员面试官方指南
+        </div>
+    </div>
+    <script>
+        function clickFunc(){
+            // 1.获取到标题和内容元素对象
+            // getElementsByClassName得到集合
+            var title = document.getElementsByClassName("title");
+            var cont = document.getElementsByClassName("cont");
+            // 2.编写代码块的代码
+            if (cont[0].style.display == ""){
+                cont[0].style.display  = "none";
+            } else {
+                cont[0].style.display  = "";
+            }
+        }
+    </script>
+</body>
+</html>

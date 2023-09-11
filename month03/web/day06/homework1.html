@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework1</title>
+    <style>
+        #wb{
+            width: 350px;
+            margin: 0 auto;
+            border: solid 1px red;
+        }
+        #wb>.cls{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="wb">
+        <div class="top">
+            <img width="350px" src="imags/back_img_01.jpeg" alt="">
+        </div>
+        <div class="cls">
+            <img id="cls" width="30px" src="imags/close.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        function $$(id) {
+            return document.getElementById(id);
+        }
+        var btnCls = $$("cls");
+        btnCls.onclick = function(){
+            // 扩展 关闭前问询
+            var yesno = confirm("真的要关闭吗?")
+            if (yesno){
+                $$("wb").style.display = "none"
+            } 
+        }
+    </script>
+</body>
+</html>

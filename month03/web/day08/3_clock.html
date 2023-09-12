@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时分秒</title>
+    <style>
+        #box{
+            width: 130px;
+            border: solid 1px #ccc;
+            margin: 0 auto;
+            padding: 10px 5px;
+            overflow: hidden;
+        }
+        #box>span{
+            width: 20px;
+            text-align: center;
+            font-size: 21px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span id="hour">00</span>
+        <span style="width: 30px;">:</span>
+        <span id="minute">00</span>
+        <span style="width: 30px;">:</span>
+        <span id="second">00</span>
+    </div>
+
+    <script>
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }
+            return i
+        }
+        var timerId = setInterval(function(){
+            // 获取当前系统时间
+            var dt = new Date();
+
+            // add a zero in front of numbers which < 10
+            document.getElementById("hour").innerText = checkTime(dt.getHours());
+            document.getElementById("minute").innerText = checkTime(dt.getMinutes());
+            document.getElementById("second").innerText = checkTime(dt.getSeconds());
+        }, 1000)
+    </script>
+</body>
+</html>

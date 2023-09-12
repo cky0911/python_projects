@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework2</title>
+    <style>
+        #pics{
+            width: 960px;
+            height: 290px;
+            border: solid 0px red;
+            margin: 0 auto;
+            position: relative;
+        }
+        #pics>.lleft{
+            top: 47%;
+            left: 0;
+            position: absolute;
+            cursor: pointer;
+        }
+        #pics>.rright{
+            top: 47%;
+            right: 0;
+            position: absolute;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="pics">
+        <a href="https://www.baidu.com">
+            <img width="960px" height="290px" id="img" src="imgs/lunbo1.jpg" alt="">
+        </a>
+        <div class="lleft">
+            <img src="imgs/箭头左.png" alt="">
+        </div>
+        <div class="rright">
+            <img src="imgs/箭头右.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        // 新建数组保存所有图片
+        var picArr = ['imgs/lunbo1.jpg', 'imgs/lunbo2.jpg', 'imgs/lunbo3.jpg', 'imgs/lunbo4.jpg', 'imgs/lunbo5.jpg'];
+        // 获取右侧单击按钮对象
+        var rright = document.getElementsByClassName("rright")[0];
+        // 获取左侧单击按钮对象
+        var lleft = document.getElementsByClassName("lleft")[0];
+        // 获取显示图片元素对象
+        var img = document.getElementById("img");
+        // 定义一个下标变量
+        var index = 0;
+        // 绑定单击按钮事件
+        rright.onclick = function(){
+            index++;
+            if (index == picArr.length) {
+                index = 0;
+            }
+            // 调用修改属性的方法重置图片对象来源
+            img.setAttribute("src", picArr[index]);
+        }
+        lleft.onclick = function(){
+            if (index == 0) {
+                index = picArr.length;
+            }
+            index--;
+            console.log(index);
+            img.setAttribute("src", picArr[index]);
+        }
+    </script>
+</body>
+</html>

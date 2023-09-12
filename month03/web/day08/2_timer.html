@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定时器</title>
+</head>
+<body>
+    <button id="btn">点我就增加</button>
+    <button id="stop">一点就停</button>
+    <div id="tip"></div>
+    <script>
+        // 定义一个初始的变量
+        var i = 0;
+        // 绑定事件
+        document.getElementById("btn").onclick = function () {
+            // i增加1
+            i++;
+            // 找到元素并赋值
+            document.getElementById("tip").innerText = i;
+        }
+        // click()等价于用户的单击事件的行为
+        var task = setInterval(function () {
+            document.getElementById("btn").click();
+            // 结束周期性的定时器
+            if (i == 11)
+                clearInterval(task);
+        }, 1000)
+
+        document.getElementById("stop").onclick = function () {
+            clearInterval(task);
+        }
+        
+        var incr = 0;
+        // 在控制台每隔1秒输出一次ok
+        var taskId = setInterval(function(){
+            console.log("ok.");
+            incr++;
+            if (incr == 5) {
+                clearInterval(taskId);
+            }
+        }, 1000)
+
+        // 超时定时器的使用 取消是clearTimeout(timerId)
+        var timerId = setTimeout(function(){
+            console.log("3秒之后打印出这段文字");
+        }, 3000);
+    </script>
+</body>
+</html>

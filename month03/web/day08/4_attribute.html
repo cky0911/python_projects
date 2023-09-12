@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="window.history.back()">返回</button>
+    <button onclick="window.history.forward()">前进</button>
+    <button onclick="window.location.reload()">刷新当前页面</button>
+    <a href="https://www.baidu.com">百度一下</a>
+    <script>
+        var his = window.history;
+        console.log(his);
+
+        // 显示当前地址栏的信息
+        var info = window.location;
+        console.log(info.href);
+
+        // 重新刷新一次页面
+        // true表示不需要缓存进行刷新 false表示需要
+        // info.reload(false);
+    </script>
+</body>
+</html>

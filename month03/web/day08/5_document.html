@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <p class="p1">4</p>
+    <p class="p1">5</p>
+    <p class="p1">6</p>
+
+    <input type="text" name="" id="">
+    <span>1</span>
+    <span>2</span>
+
+    <div id="tip">hello, world</div>
+
+    <script>
+        // 1.根据标签名获取元素节点列表
+        var divs = document.getElementsByTagName("div");
+        // 输出标签名集合
+        console.log(divs);
+        // 在控制台输出第二个节点
+        console.log(divs[1]);
+
+        // 2.根据class属性值获取元素节点列表
+        var ps = document.getElementsByClassName("p1");
+        console.log(ps);
+        // 输出第三个节点
+        console.log(ps[2]);
+
+        // 3.根据name属性值取元素列表
+        // var names = document.getElementsByName("xxx");
+
+        var inputs = document.getElementsByTagName("input");
+        var spans = document.getElementsByTagName("span");
+        console.log(spans);
+        inputs[0].oninput = function(){
+            for (var i = 0; i < spans.length; i++) {
+                spans[i].innerText = inputs[0].value;
+            }
+        }
+    </script>
+</body>
+</html>

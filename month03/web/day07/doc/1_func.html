@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匿名函数</title>
+</head>
+<body>
+    <div id="tip">...</div>
+    <script>
+        function sayHi(name, age){
+            return name + ",hello world, age is:" + age;
+        }
+        // 获取指定id的元素
+        var objTip = document.getElementById("tip");
+        // 设置元素对象中的内容
+        objTip.innerText = sayHi("张三", 18);
+
+        // (function(name){
+        //     var objTip = document.getElementById("tip");
+        //     objTip.innerText = name + ",hello world";
+        // })("李四");
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <div id="tip"></div>
+    <input type="text" id="txt">
+
+    <script>
+        // 实时显示文本框中输入的内容
+        var objTip = document.getElementById("tip");
+        var objTxt = document.getElementById("txt");
+        objTxt.oninput = function(){
+            // objTip.innerText = objTxt.value.toUpperCase();
+            objTip.innerText = objTxt.value.charAt(0);
+        }
+
+        var str = 'p=496&spm_id_from=pageDriver&vd_source=616ed6b4b8f55a46c10025a571f5fac3';
+        var arr = str.split('&');
+        console.log(arr);
+    </script>
+</body>
+</html>

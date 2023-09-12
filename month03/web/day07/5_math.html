@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <script>
+        var num = 123.3543;
+        // 向上取整
+        console.log(Math.ceil(num));
+        // 向下取整
+        console.log(Math.floor(num));
+        //
+        console.log(Math.round(num));
+        // 生成一个随机数并输出
+        console.log(Math.floor(Math.random() * 10)) //(0~9);
+        console.log(Math.ceil(Math.random() * 10)); //(1~10)
+
+        // 生成指定位数的验证码
+        function createCode(len){
+            var arr = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+            var res = "";
+            for (var i = 0; i < len; i++) {
+                var index = Math.floor(Math.random() * arr.length);
+                res += arr[index];
+            }
+            console.log(res);
+        }
+        createCode(6);
+    </script>
+</body>
+</html>

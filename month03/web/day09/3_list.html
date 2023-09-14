@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100px;
+        }
+        ul>li{
+            border-bottom: dashed 1px #ccc;
+            padding: 10px 5px;
+        }
+    </style>
+    <!-- 导入js框架 -->
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+        <li>ddd</li>
+        <li>eee</li>
+    </ul>
+    <button id="btn">隐藏</button>
+
+    <script>
+        // index为3的字号增大
+        $("li:eq(3)").css("font-size", "20px");
+        // 第一个和最后一个变为红色
+        $("li:first, li:last").css("color", "red");
+        // 奇数行背景变蓝, 偶数绿
+        $("li:odd").css("background-color", "blue");
+        $("li:even").css("background-color", "green");
+
+        // 动画效果
+        // $("#btn").on("click", function(){
+        //     if ($("#btn").text() == "隐藏"){
+        //         // 3秒动画时间隐藏
+        //         $("ul").hide(3000, function(){
+        //             $("#btn").text("显示");
+        //         });
+        //     } else {
+        //         $("ul").show(3000, function(){
+        //             $("#btn").text("隐藏");
+        //         });
+        //     }
+        // });
+
+        // 修改动画效果
+        $("#btn").on("click", function(){
+            if ($("#btn").text() == "隐藏"){
+                // 3秒动画时间隐藏 回调函数
+                $("ul").slideUp(3000, function(){
+                    $("#btn").text("显示");
+                });
+            } else {
+                $("ul").slideDown(3000, function(){
+                    $("#btn").text("隐藏");
+                });
+            }
+        });
+    </script>
+</body>
+</html>

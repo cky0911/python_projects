@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        #ball{
+            width: 20px;
+            height: 20px;
+            background-color: orangered;
+            border-radius: 50%;
+            /* 设置了才可以进行移动 */
+            position: absolute;
+            top: 100;
+            left: 100;
+        }
+    </style>
+    <!-- 导入js框架 -->
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div id="img">
+        <img src="imags/back_img_01.jpeg" alt="">
+    </div>
+
+    <button id="btn">隐藏</button>
+
+    <!-- 定义一个小球 -->
+    <div id="ball">
+
+    </div>
+    <button id="move">移动</button>
+
+    <script>
+        // 淡隐淡现动画
+        $("#btn").on("click", function(){
+            if ($("#btn").text() == "隐藏") {
+                $("#img").fadeOut(3000, function(){
+                    $("#btn").text("显示");
+                });
+            } else {
+                $("#img").fadeIn(3000, function(){
+                    $("#btn").text("隐藏");
+                });
+            }
+        });
+
+        $("#move").on("click", function(){
+            $("#ball").animate({
+                left: "200px"
+            })
+            setTimeout(function(){
+                $("#ball").animate({
+                    top: "10px"
+                })
+            });
+        });
+
+        // 只能一次
+        window.onload = function(){
+            alert("原生页面加载完成！");
+        }
+        // 可以多次
+        $(function(){
+            alert("页面加载完成！");
+        })
+    </script>
+</body>
+</html>

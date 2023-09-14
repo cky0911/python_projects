@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework4</title>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            overflow: hidden;
+        }
+        ul>li{
+            float: left;
+            border: solid 1px red;
+            text-align: center;
+        }
+        .top{
+            width: 262px;
+            overflow: hidden;
+        }
+        .change{
+            float: right;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="tip">相关书籍</div>
+        <div class="change">换一换</div>
+    </div>
+    <ul>
+        <!-- <li>
+            <img src="imags/book1.jpg" alt="">
+            <h3><a href="javascript:;">C++编程</a></h3>
+            <p>属于第一类</p>
+        </li>
+        <li>
+            <img src="imags/book2.jpg" alt="">
+            <h3><a href="javascript:;">CPU眼里的C/C++</a></h3>
+            <p>属于第二类</p>
+        </li> -->
+    </ul>
+
+    <script>
+        // 定义数组保存数据
+        var arrBooks = [
+                {
+                    url: 'imags/book1.jpg',
+                    name: 'C++编程核心指南',
+                    cls: '属于第一类'
+                },
+                {
+                    url: 'imags/book2.jpg',
+                    name: 'CPU眼里的C/C++',
+                    cls: '属于第二类'
+                },
+                {
+                    url: 'imags/book3.jpg',
+                    name: 'Java从入门到精通',
+                    cls: '属于第三类'
+                },
+                {
+                    url: 'imags/book4.jpg',
+                    name: 'C Primer Plus',
+                    cls: '属于第四类'
+                },
+                {
+                    url: 'imags/book5.jpg',
+                    name: 'Python编程:从入门到实践',
+                    cls: '属于第五类'
+                },
+                {
+                    url: 'imags/book6.jpg',
+                    name: 'Spring Cloud微服务开发实践',
+                    cls: '属于第六类'
+                },
+                {
+                    url: 'imags/book7.jpg',
+                    name: '重构改善既有代码结构设计',
+                    cls: '属于第七类'
+                },
+            ]
+            // 使用选择器获取换一换按钮
+            $(".change").on("click", function(){
+                // 1.生成随机下标
+                // 2.根据下标获取数组元素
+                // 3.将元素数据显示在页面中
+                // console.log(generateRandom(2).toString())
+                var _tempArr = generateRandom(4);
+                var HTML = "";
+                for (var i = 0; i < _tempArr.length; i++) {
+                    HTML += '<li>'
+                    HTML += '<img src="' + arrBooks[_tempArr[i]].url + '" alt="">'
+                    HTML += '<h3><a href="javascript:;"> ' + arrBooks[_tempArr[i]].name + '</a></h3>'
+                    HTML += '<p>' + arrBooks[_tempArr[i]].cls + '</p>'
+                    HTML += '</li>'
+                }
+                $("ul").html($(HTML));
+            })
+            function generateRandom(count){
+                var arrTemp = [];
+                var cnt = 0;
+                while (cnt != count) {
+                    var _index = Math.floor(Math.random() * arrBooks.length);
+                    if (arrTemp.indexOf(_index) == -1) {
+                        arrTemp.push(_index);
+                        cnt++;
+                    }
+                }
+                return arrTemp;
+            }
+    </script>
+</body>
+</html>

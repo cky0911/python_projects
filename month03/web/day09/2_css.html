@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQ_css</title>
+    <!-- 编写样式代码 -->
+    <style>
+        #tip{
+            border: solid 1px #ccc;
+            width: 200px;
+            margin: 0 auto;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .red{
+            background-color: red;
+            color: white;
+        }
+    </style>
+    <!-- 导入js框架 -->
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div id="tip">
+        jQuery框架如此强大!
+    </div>
+
+    <div>a</div>
+    <div id="mid">b</div>
+    <div>c</div>
+
+    <div id="parent">
+        <!-- 动态创建一个子类元素 id为child 内容为我是一个动态元素  字体红色-->
+        <div>我是原有内容</div>
+    </div>
+
+    <script>
+        // $("#tip").addClass("red").css("color", "white");
+        $("#tip").on("click", function(){
+            $("#tip").toggleClass("red");
+        })
+
+        console.log($("#mid").prev().text()); // a
+        console.log($("#mid").next().text()); // c
+
+        // 创建一个div元素
+        var $div = $("<div></div>");
+        // 设置id和内容
+        $div.attr("id", "child").html("我是一个动态元素").css("color", "red");
+        console.log($div);
+        // $("#parent").html($div);
+        // $("#parent").append($div);
+        $("#parent").prepend($div); // 作为第一个元素添加
+    </script>
+</body>
+</html>

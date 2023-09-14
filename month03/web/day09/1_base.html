@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQ_base</title>
+    <script src="js/jquery.min.js"></script>
+    <!-- 1.寻找目标文件
+         2.下载文件到浏览器缓存
+         3.解析文件 -->
+</head>
+<body>
+    <div id="tip">hello,world!</div>
+    <!-- 添加一个复选框 -->
+    <input type="checkbox" checked name="marry" id="marry">婚否
+
+    <script>
+        // 原生对象
+        console.log(document.getElementById("tip"));
+        // jq对象
+        console.log($("#tip"))
+        // 原生对象转jq对象
+        console.log($(document.getElementById("tip")));
+        // jq对象转原生对象
+        console.log($("#tip")[0]);
+
+        // 1.使用jq选择器获取元素
+        
+        // 2.改变元素显示的内容
+        // document.getElementById("tip").innerText = "今天天气很棒";
+        // 体会两种方法的区别
+        $("#tip").html("<b>今天天气很棒");
+        $("#tip").text("<b>今天天气很棒");
+
+        // 操作标签属性 attr("attrName","value")
+        console.log($("#tip").attr("id")); // tip
+        
+        // 在设置或读取元素属性时,attr()和prop()基本没有区别;
+        // 但是在读取或设置表单元素(按钮)的选中状态时,必须用prop()方法,
+        // attr()不会监听按钮选中状态的改变,只看标签属性checked是否书写
+        console.log($("#marry").attr("checked"));
+        console.log($("#marry").prop("checked")); // 返回true
+    </script>
+</body>
+</html>

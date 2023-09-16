@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博客-文章列表</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/scrollReveal.js"></script>
+    <script src="js/system.js"></script> -->
+</head>
+<body>
+    <!-- 设计导航条元素 -->
+    <div id="nav">
+        <div class="box">
+            <!-- 标题元素 -->
+            <div class="title">
+                <h3>个人博客</h3>
+            </div>
+            <!-- 列表元素 -->
+            <div class="list">
+                <ul>
+                    <li><a href="index.html">网站首页</a></li>
+                    <li class="focus">文章列表</li>
+                    <li><a href="mypic.html">我的相册</a></li>
+                    <li>时间轴</li>
+                    <li>留言</li>
+                    <li>关于我</li>
+                    <li>发表博客</li>
+                </ul>
+            </div>
+            <!-- 导航链接 -->
+            <div class="a1">
+                <a href="login.html">登录</a>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="adimg">
+        <img src="images/page_bg1.png" alt="">
+    </div>
+    <!-- 最大的页面元素 -->
+    <div id="list">
+        <!-- 添加顶部元素 -->
+        <div class="top">
+            <div class="tleft">
+                <h3>文章列表</h3>
+            </div>
+            <div class="tright">
+                <p>人间没有永恒的夜晚，世界没有永恒的冬天。</p>
+            </div>
+        </div>
+        <!-- 添加主体元素 -->
+        <div class="body">
+            <!-- 列表部分 -->
+            <div class="lst">
+                <!-- 列表项 -->
+                <div class="item">
+                    <!-- 标题 -->
+                    <div class="title">
+                        <h3>Python语言在人工智能中的优势</h3>
+                    </div>
+                    <!-- 内容 -->
+                    <div class="con">
+                        <!-- 左侧图片 -->
+                        <div class="cleft">
+                            <img src="images/toppic01.jpg" alt="">
+                        </div>
+                        <!-- 右侧说明文字 -->
+                        <div class="cright">
+                            <p class="ptop">
+                                近年来，人工智能领域的发展势头迅猛，越来越多的技术被应用到各个领域中。而Python作为一种强大的编程语言，也在不断地被人工智能领域所使用。本文将探讨Python与人工智能的结合，以及Python在人工智能领域的应用。
+                            </p>
+                            <p class="pbottom">
+                                皮皮虾 学无止境 2023-09-16 23456已阅读 9999
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 广告推荐 -->
+            <div class="ad">
+                <!-- 标题 -->
+                <div class="adtip">
+                    <h3>特别推荐</h3>
+                    <div class="line">&nbsp;</div>
+                </div>
+                <div class="imglst">
+                    <ul>
+                        <li>
+                           <img src="images/banner03.jpg" alt=""> 
+                        </li>
+                        <li>
+                            <img src="images/b04.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导入业务逻辑文件 -->
+    <script src="js/blog.js"></script>
+</body>
+</html>

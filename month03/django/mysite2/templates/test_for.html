@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for循环测试</title>
+</head>
+<body>
+    <ul>
+        {% for city in lst %}
+        <li>{{ forloop.counter }}.{{ city }}</li>
+        {% empty %}
+        <li>没有任何一个城市</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for city in lst %}
+        {% if forloop.first %}
+        <li>第一次进入循环打印</li>
+        {% endif %}
+        <li>{{ forloop.revcounter }}.{{ city }}</li>
+        {% endfor %}
+    </ul>
+    <!-- 过滤器 -->
+    <div>
+        <h5>{{ s }}</h5>
+        <h5>{{ s | upper }}</h5>
+        <h5>{{ n | add:2}}</h5>
+    </div>
+</body>
+</html>

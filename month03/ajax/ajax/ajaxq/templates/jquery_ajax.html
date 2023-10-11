@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery_ajax</title>
+</head>
+<body>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <span id="loading" style="display:none"> 加载中...[这是动画]</span>
+    username <input type="text" id="name">
+
+    <button id="btn">jquery ajax</button>
+    <script>
+    $(function(){
+        $('#btn').click(function(){
+        $.ajax({
+            url: '/ajaxq/jquery_ajax_server',
+            // 此次请求的方式
+            type: 'get',
+            // 服务器返回的类型
+            dataType: 'json',
+            // 是否为异步
+            async: true,
+            success: function(data){
+                console.log(data.msg + " " + data.code);
+                $('#loading').hide(3000);
+                $('#btn').removeAttr('disabled');
+
+            },
+            error: function(){
+                alert('Server is busy !')
+
+            },
+            beforeSend: function(){
+                // 将btn置成不可用状态
+                $('#loading').show();
+                $('#btn').attr({disabled:'disabled'});
+            }
+        })
+        })
+    })
+    </script>
+</body>
+</html>

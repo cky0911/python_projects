@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery-post</title>
+</head>
+<body>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    {% csrf_token %}
+    <p>
+        姓名： <input type="text" id="name">
+    </p>
+    <p>
+        <button id="btn">提交</button>
+    </p>
+
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+                var params = {
+                    name: $('#name').val(),
+                    csrfmiddlewaretoken: $("[name='csrfmiddlewaretoken']").val()
+                }
+                $.post('/ajaxq/jquery_post_server', params,function(data){
+                    // 返回的data直接被转换为js对象
+                    var msg = data.msg
+                    var code = data.code
+                    alert('msg is '+ msg + ' and code is ' + code);
+                },'json');
+            })
+
+        })
+    </script>
+</body>
+</html>

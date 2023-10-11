@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery_ajax_user</title>
+</head>
+<body>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <button id="btn">show data</button>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody id="show"></tbody>
+    </table>
+
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+                $.ajax({
+                    // url: '/ajaxq/jquery_ajax_user_server',
+                    url: 'http://localhost:8000/ajaxq/jquery_ajax_user_server',
+                    type: 'get',
+                    dataType: 'json',
+                    async: true,
+                    success: function(data){
+                        var html = '';
+                        $.each(data, function(i,obj){
+                            html += '<tr>';
+                            html += '<td>' + obj.name + '</td>';
+                            html += '<td>' + obj.age + '</td>';
+                            html += '</tr>'
+                        })
+                        $('#show').html(html);
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+</html>

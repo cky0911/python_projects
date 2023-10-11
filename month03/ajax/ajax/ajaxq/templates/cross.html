@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cross</title>
+</head>
+<body>
+    <button id="btn">跨域请求</button>
+
+    <script src="/static/js/jquery-1.11.3.js"></script>
+
+    <script>
+        // 跨域要用到的预留函数
+        function print(data){
+            console.log(typeof(data))
+            console.log('server data is ' + data)
+        }
+
+       
+        // js 原生跨域
+        // $(function(){
+        //     $('#btn').click(function(){
+        //     // 获取Body
+        //     var body = document.getElementsByTagName('body')[0]
+        //     // 创建script
+        //     var script = document.createElement("script")
+        //     script.type = 'text/javascript';
+        //     script.src = 'http://localhost:8000/ajaxq/cross_server?callback=print';
+        //     // 将script 添加到body里
+        //     body.append(script);
+        //     })
+        // })
+
+            
+        // jquery cross
+        $(function(){
+            $('#btn').click(function(){
+                // ajax版本
+                // $.ajax({
+                //     url: 'http://localhost:8000/ajaxq/cross_server',
+                //     type: 'get',
+                //     dataType: 'jsonp',
+                //     jsonp: 'callback',
+                //     jsonpCallback: 'print'
+                // })
+
+                // ajax 超简版
+                $.ajax({
+                    url:'http://localhost:8000/ajaxq/cross_server_json',
+                    type:'get',
+                    dataType: 'jsonp',
+                    success: function(data){
+                        console.log('--ajax--console--');
+                        console.log(data)
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+</html>

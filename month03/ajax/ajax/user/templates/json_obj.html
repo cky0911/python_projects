@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json_obj</title>
+</head>
+<body>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+
+    <button onclick="showJson()">showJson</button>
+
+    <script>
+        function showJson(){
+            // var obj = {
+            //     "uname": "zhaoxiaodao",
+            //     "age": 27,
+            //     "gender": "male"
+            // }
+            // console.log(obj.uname, obj.age, obj.gender);
+
+            var arr = [
+                {
+                "name":"王老师",
+                "age":30,
+                "gender":"male"
+                            },
+                {
+                "name":"王夫人",
+                "age":28,
+                "gender":"female"
+                            }
+            ];
+
+            // for (var i = 0; i < arr.length; i++){
+            //     var obj = arr[i];
+            //     console.log('name is ' + obj.name);
+            //     console.log('age is '+ obj.age);
+            // }
+
+            $(arr).each(function(index, obj){
+                console.log('name is ' + obj.name);
+                console.log('age is '+ obj.age);
+                console.log('gender is '+ obj.gender);
+            })
+
+            $.each(arr, function(index, obj){
+                console.log('index is ' + index + ';name is ' + obj.name);
+                console.log('index is ' + index + ';age is '+ obj.age);
+                console.log('index is ' + index + ';gender is '+ obj.gender);
+            })
+            var json_str = '[{"name": "kycheng"}, {"name": "kycheng2"}, {"name": "kycheng3"}, {"name": "tx"}, {"name": "tx1"}, {"name": "haha"}]';
+            var json_obj = JSON.parse(json_str);
+            console.log(json_obj);
+        }
+    </script>
+</body>
+</html>

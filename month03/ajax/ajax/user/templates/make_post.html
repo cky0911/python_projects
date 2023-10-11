@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make-post</title>
+</head>
+<body>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <form action="/user/make-post" method="post">
+        {% csrf_token %}
+        <p>
+            用户名 <input type="text" id="uname" name="uname">
+            <span id="show"></span>
+        </p>
+        <p>
+            密码 <input type="password" id="pwd" name="pwd">
+        </p>
+        <p>
+            <input type="submit" id="btn" value="go_go_go">
+        </p>
+
+        <script>
+            <!--页面所有元素加载完毕执行-->
+            $(function(){
+                $('#btn').click(function(){
+                    // 1.创建xhr请求
+                    var xhr = createXhr();
+                    // 2.创建请求 - open()
+                    // var url = '/user/make-post?uname=' + $('#uname').val()
+                    var url = '/user/make-post'
+                    xhr.open('post', url, true)
+                    // 3.设置回调函数 - onreadystatechange
+                    xhr.onreadystatechange = function(){
+                        if(xhr.readyState == 4 && xhr.status == 200){
+                            // 接收响应
+                            alert(xhr.responseText)
+                        }
+                    }
+                    // 4.设置请求头
+                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                    // 5.发送请求
+                    var uname = $('#uname').val();
+                    var pwd = $('#pwd').val();
+                    var csrf = $("[name='csrfmiddlewaretoken']").val();
+
+                    var params = "uname=" + uname + "&pwd=" + pwd + "&csrfmiddlewaretoken=" + csrf;
+                    xhr.send(params);
+                })
+            })
+        </script>
+    </form>
+</body>
+</html>

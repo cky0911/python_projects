@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>get-xhr</title>
+  </head>
+  <body>
+    <div>
+        <a href="/user/get-xhr-server">common_request</a>
+    </div>
+    <div>
+        <button onclick="getXhr()">get-xhr</button>
+        <div id="show"></div>
+    </div>
+    <div>
+        <input type="text" id="uname">
+        <button onclick="getXhrWithParams()">get-xhr-with-params</button>
+        <div id="show_params"></div>
+    </div>
+    
+    <script src="/static/js/common.js"></script>
+    <script>
+        function getXhr(){
+            // 1.创建xhr请求
+            var xhr = createXhr();
+            // 2.创建请求 - open()
+            xhr.open('get', '/user/get-xhr-server', true)
+            // 3.设置回调函数 - onreadystatechange
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4 && xhr.status == 200){
+                    // 接收响应
+                    document.getElementById('show').innerHTML = xhr.responseText;
+                }
+            }
+            // 4.发送请求
+            xhr.send(null);
+        }
+
+        function getXhrWithParams(){
+            // 1.创建xhr请求
+            var xhr = createXhr();
+            // 2.创建请求 - open()
+            var uname = document.getElementById('uname').value;
+            xhr.open('get', '/user/get-xhr-server?uname=' + uname, true)
+            // 3.设置回调函数 - onreadystatechange
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4 && xhr.status == 200){
+                    // 接收响应
+                    document.getElementById('show_params').innerHTML = xhr.responseText;
+                }
+            }
+            // 4.发送请求
+            xhr.send(null);
+        }
+    </script>
+  </body>
+</html>

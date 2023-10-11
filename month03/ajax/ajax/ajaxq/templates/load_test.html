@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>load_test</title>
+</head>
+<body>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <button id="btn">show jquery load</button>
+    <div id="show"></div>
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+                // load
+                // $('#show').load('/ajaxq/load_test_server');
+
+                // 参数 - GET形式
+                // $('#show').load('/ajaxq/load_test_server', 'name=zhangsan&age=18')
+
+                // 参数 - POST形式
+                // $('#show').load('/ajaxq/load_test_server', {name:'zhangsan'})
+
+                // 回调
+                $('#show').load('/ajaxq/load_test_server',function(){
+                    alert('--This is callback--')
+                })
+
+                // 指定元素load
+                // $('#show').load('/ajaxq/load_test_server #btn2')
+
+                // load 远程页面
+                // $('#show').load('https://www.taobao.com')
+            })
+        })
+    </script>
+</body>
+</html>

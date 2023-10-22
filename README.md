@@ -111,3 +111,8 @@ admin后台数据库管理:
 跨域相关：
   - sudo pip3 install django-cors-headers
   - pip3 freeze|grep 'cors'
+
+linux:
+  - 文件中搜索： `/xxx`
+  - 文件中显示行数：`:set nu`
+  - xxx
